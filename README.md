@@ -59,7 +59,6 @@ Réponse :
 ### 1. Build & push des images
 
 ```bash
-# Depuis Docker Desktop (pas Minikube)
 docker build -t rubnk/hello-service:latest ./hello-service
 docker build -t rubnk/time-service:latest ./time-service
 docker build -t rubnk/api-gateway:latest ./api-gateway
