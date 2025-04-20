@@ -1,0 +1,4 @@
+/api-gateway/node_modules
+/api-gateway/package-lock.json
+/time-service/node_modules
+/time-service/package-lock.json

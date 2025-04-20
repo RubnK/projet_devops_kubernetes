@@ -1,0 +1,16 @@
+version: '3'
+services:
+  hello-service:
+    build: ./hello-service
+    ports:
+      - "8080:8080"
+
+  time-service:
+    build: ./time-service
+    ports:
+      - "3001:3001"
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "3000:3000"
