@@ -101,6 +101,10 @@ GitHub Actions build automatiquement :
 
 Fichier : `.github/workflows/ci.yml`
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/71b92b6a-c66f-479f-b37c-9bc98ec74665)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE)
