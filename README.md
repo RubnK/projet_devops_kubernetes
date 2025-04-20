@@ -19,6 +19,31 @@ L’objectif : créer une architecture minimale mais fonctionnelle de type cloud
 | `time-service`   | Node.js            | 3001 | Retourne l’heure actuelle                        |
 | `api-gateway`    | Node.js            | 3000 | Agrège les deux services et expose `/api/hello`  |
 
+## Déploiement en local (via Docker Compose)
+
+Pour un lancement rapide et local, le projet fournit un fichier `docker-compose.yml` qui build et exécute automatiquement les trois services.
+
+1. Cloner le dépot :
+```
+git clone https://github.com/RubnK/projet_devops_kubernetes.git
+cd projet_devops_kubernetes
+```
+
+2. Lancer tous les services :
+```
+docker-compose up --build
+```
+
+Les services suivants seront accessibles :
+
+`http://localhost:8080/hello` → Hello Java
+
+`http://localhost:3001/time` → Heure actuelle
+
+`http://localhost:3000/api/hello` → Gateway qui agrège les deux
+
+
+
 ## Déploiement Kubernetes (via Docker Hub)
 
 Les images sont **déjà disponibles sur Docker Hub**, prêtes à l’emploi :  
