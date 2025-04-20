@@ -20,6 +20,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+      - name: Make Gradle wrapper executable
+        run: chmod +x gradlew
+
       - name: Build with Gradle
         run: ./gradlew build --no-daemon
 
@@ -36,7 +39,7 @@ jobs:
         with:
           node-version: '18'
       - name: Install deps
-        run: npm ci
+        run: npm install
       - name: Lint
         run: npm run lint || echo "Lint failed"
       - name: Build Docker image
@@ -55,7 +58,7 @@ jobs:
         with:
           node-version: '18'
       - name: Install deps
-        run: npm ci
+        run: npm install
       - name: Lint
         run: npm run lint || echo "Lint failed"
       - name: Build Docker image
